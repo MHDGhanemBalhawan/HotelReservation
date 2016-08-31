@@ -1,0 +1,175 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding: 0px;
+  
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 3px;
+    }
+}
+
+
+﻿ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff6a00;
+}
+
+li 
+{
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) 
+{
+    background-color: #0094ff;
+}
+
+.active 
+{
+    background-color: #4CAF50;
+}
+
+.topContainer /*navbar*/ 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+        background-color: #F8F8F8;
+    border-color: #E7E7E7;
+    /*position: absolute;
+    top: 0;
+    left: 70px;*/
+    /*flex-flow: column;
+    margin-top: 50px;
+    padding-top: 50px;
+    margin-bottom: 5px;*/
+}
+
+
+.ol 
+{
+    padding-left: 40%;
+}
+
+.container /*carousel*/
+{
+    max-width:70%;
+    float:right;
+}
+
+#mycarousel 
+{
+    padding: 25px 25px 25px 25px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img 
+{
+    width: 100% !important;
+    height: 400px !important;
+    margin: auto !important;
+}
+
+/*@media (min-width: 400px) {
+  container { max-width:20%; }
+}
+@media (min-width: 600px) {
+  container { max-width:30%; }
+}
+@media (min-width: 800px) {
+  container { max-width:40%; }
+}
+@media (min-width: 1200px) {
+  container { max-width:60%; }
+}*/
+
+@media (min-width: 600px) and (max-width: 800px) {
+  container { max-width:60%; }
+}
+
+
+.columnleft 
+{
+    float: left;
+    width:25%;
+    max-width: 65%;
+    border: solid 1px black;
+    /*margin: 2px 2px 5px 70px;*/
+    padding: 1px;
+    background-color: white;
+    min-height: 700px;
+}
+
+
+.column 
+{
+    float: left;
+    max-width: 58%;
+    border: solid 1px black;
+    margin: 2px 5px 5px 9px;
+    padding: 1px;
+    background-color: white;
+    min-height: 700px;
+}
+
+
+
+.clear 
+{
+    clear: both;
+}
+
+.row /*footer*/
+{
+    padding: 0px 0px 0px 0px;
+    float: none;
+    width: auto;
+}
+
+.footer 
+{
+    background-color: #ff0000;
+    width: auto;
+}
