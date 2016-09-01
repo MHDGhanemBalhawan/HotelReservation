@@ -106,9 +106,9 @@ input[type="select"] {
 .column 
 {
     float: left;
-    max-width: 58%;
+    max-width: 67.5%;
     border: solid 1px black;
-    margin: 2px 5px 5px 20px;
+    margin: 2px 2px 5px 20px;
     padding: 1px;
     background-color: white;
     min-height: 700px;
