@@ -8,9 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %>Hotel Reservation</title>
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
     <script src="Scripts/jquery-3.1.0.min.js"></script>
     <link href="Content/bootstrap-datepicker.css" rel="stylesheet" />
 
@@ -40,6 +43,7 @@
     <div id="header">
 
       <%--  <nav class="navbar navbar-default">--%>
+
 <div class="navbar navbar-default navbar-static-top"><%--keep navbar on top--%>
 <div class="container-fluid"> <%--keep navbar visible--%>
 
@@ -49,11 +53,12 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
   </button>
+      <a class="navbar-brand" href="#">Hotel Reservation</a>
+    </div>
 
- </div>
 
-    <div class="collapse navbar-collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav nav-pills">
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
             <li class="active"><a runat="server" href="~/Default" class="btn btn-primary">Home</a></li>
             <li><a runat="server" href="~/" class="btn btn-primary">About</a></li>
             <li><a runat="server" href="~/About" class="btn btn-primary">About</a></li>
@@ -64,8 +69,8 @@
             <asp:LoginView runat="server" ViewStateMode="Disabled">
             <AnonymousTemplate>
         <ul class="nav navbar-nav nav-bar-pills navbar-right">
-            <li><a runat="server" href="~/Account/Register" class="btn btn-primary">Register</a></li>
-            <li><a runat="server" href="~/Account/Login" class="btn btn-primary">Log in</a></li>
+            <li><a runat="server" href="~/Account/Register" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+            <li><a runat="server" href="~/Account/Login" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
             </AnonymousTemplate>
             <LoggedInTemplate>
         </ul>
@@ -79,22 +84,11 @@
     </div>
     </div>
     
-<%--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>--%>
-  <%--  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>--%>
-
 
     </div>
 
 </div>
-
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
-    <script src="js/bootstrap.min.js"></script> 
-    <script> $(function () { $('.nav-tabs a:first').tab('show'); }); </script> </body>
-</div>
-
-
-
-
+    </div>
 
 
 
@@ -218,14 +212,7 @@
 
     </div>
 
-
-    </form>
-
-
-
-
-
-
+</form>
 
 
 </body>

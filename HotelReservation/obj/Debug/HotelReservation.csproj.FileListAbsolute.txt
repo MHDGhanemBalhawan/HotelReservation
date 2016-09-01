@@ -1,3 +1,4 @@
+C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\obj\Debug\HotelReservation.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\HotelReservation.dll.config
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\HotelReservation.dll
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\HotelReservation.pdb
@@ -28,9 +29,9 @@ C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Owin.dll
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\System.Web.Optimization.dll
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\System.Web.Providers.dll
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\WebGrease.dll
+C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Newtonsoft.Json.xml
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\System.Web.Optimization.xml
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Antlr3.Runtime.pdb
-C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Newtonsoft.Json.xml
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\EntityFramework.xml
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\EntityFramework.SqlServer.xml
@@ -47,6 +48,5 @@ C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Microsoft.
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\obj\Debug\HotelReservation.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\obj\Debug\HotelReservation.dll
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\obj\Debug\HotelReservation.pdb
