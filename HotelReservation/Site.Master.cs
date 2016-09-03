@@ -163,6 +163,15 @@ namespace HotelReservation
             {
                 pnlCheckOut.Visible = false;
             }
+
+        }
+
+        protected void txtCheckOutDate_TextChanged(object sender, EventArgs e)
+        {
+            TimeSpan s = new TimeSpan(Convert.ToDateTime(txtCheckInDate.Text).Ticks);
+            TimeSpan e1 = new TimeSpan(Convert.ToDateTime(txtCheckOutDate.Text).Ticks);
+
+            lblDateDiff.Text = (e1.Subtract(s).TotalDays).ToString();
         }
     }
 
