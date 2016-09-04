@@ -86,9 +86,9 @@ namespace HotelReservation
                     lblDateDiff.Text = "";
                     lblDateDiff.Text = (e1.Subtract(s).TotalDays).ToString() + " day";
                 }
-                else if ((e1.Subtract(s).TotalDays)<1)
+                else if ((e1.Subtract(s).TotalDays)==0)
                 {
-                    lblDateDiff.Text = "";
+                    lblDateDiff.Text = "1 day";
                 }
                 else if ((e1.Subtract(s).TotalDays) > 1)
                 {
