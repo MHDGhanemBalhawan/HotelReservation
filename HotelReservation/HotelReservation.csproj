@@ -176,6 +176,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\bed-1575491_1280.png" />
+    <Content Include="images\Calendar_scheduleHS.png" />
     <Content Include="images\hotel-316298_1280.png" />
     <Content Include="images\meeting-room.png" />
     <Content Include="images\MyLogo.png" />

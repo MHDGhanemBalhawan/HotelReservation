@@ -69,6 +69,39 @@ namespace HotelReservation
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (txtCheckInDate.Text == "")
+            {
+                lblDateDiff.Text = "Please select check in date";
+            }
+            else if (txtCheckOutDate.Text == "")
+            {
+                    lblDateDiff.Text = "Please select check out date";
+            }
+            else
+            {
+                TimeSpan s = new TimeSpan(Convert.ToDateTime(txtCheckInDate.Text).Ticks);
+                TimeSpan e1 = new TimeSpan(Convert.ToDateTime(txtCheckOutDate.Text).Ticks);
+                if ((e1.Subtract(s).TotalDays)==1)
+                {
+                    lblDateDiff.Text = "";
+                    lblDateDiff.Text = (e1.Subtract(s).TotalDays).ToString() + " day";
+                }
+                else if ((e1.Subtract(s).TotalDays)<1)
+                {
+                    lblDateDiff.Text = "";
+                }
+                else if ((e1.Subtract(s).TotalDays) > 1)
+                {
+                    lblDateDiff.Text = "";
+                    lblDateDiff.Text = (e1.Subtract(s).TotalDays).ToString() + " days";
+                }
+                else  
+                {
+                    lblDateDiff.Text = "";
+                }
+                
+            }
+            
 
         }
 
@@ -168,10 +201,8 @@ namespace HotelReservation
 
         protected void txtCheckOutDate_TextChanged(object sender, EventArgs e)
         {
-            TimeSpan s = new TimeSpan(Convert.ToDateTime(txtCheckInDate.Text).Ticks);
-            TimeSpan e1 = new TimeSpan(Convert.ToDateTime(txtCheckOutDate.Text).Ticks);
+       
 
-            lblDateDiff.Text = (e1.Subtract(s).TotalDays).ToString();
         }
     }
 

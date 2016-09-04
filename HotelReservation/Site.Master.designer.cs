@@ -22,13 +22,13 @@ namespace HotelReservation {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder TopContentPlaceHolder;
         
         /// <summary>
-        /// LeftContentPlaceHolder control.
+        /// cphLeft control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder LeftContentPlaceHolder;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder cphLeft;
         
         /// <summary>
         /// ScriptManager1 control.
@@ -166,13 +166,22 @@ namespace HotelReservation {
         protected global::System.Web.UI.WebControls.Label lblDateDiff;
         
         /// <summary>
-        /// MainContent control.
+        /// CompareValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
+        
+        /// <summary>
+        /// cphMain control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder cphMain;
         
         /// <summary>
         /// footer control.

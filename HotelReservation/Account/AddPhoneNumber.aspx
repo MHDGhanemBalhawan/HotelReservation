@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Phone Number" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddPhoneNumber.aspx.cs" Inherits="HotelReservation.Account.AddPhoneNumber" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="cphMain" runat="server">
     <h2><%: Title %>.</h2>
 
     <div class="form-horizontal">

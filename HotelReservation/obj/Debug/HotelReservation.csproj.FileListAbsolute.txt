@@ -1,4 +1,3 @@
-C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\obj\Debug\HotelReservation.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\HotelReservation.dll.config
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\HotelReservation.dll
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\HotelReservation.pdb
@@ -48,5 +47,6 @@ C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Microsoft.
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\obj\Debug\HotelReservation.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\obj\Debug\HotelReservation.dll
 C:\Users\Admin\Documents\GitHub\HotelReservation\HotelReservation\obj\Debug\HotelReservation.pdb

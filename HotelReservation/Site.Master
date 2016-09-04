@@ -60,17 +60,20 @@
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
             <li class="active"><a runat="server" href="~/Default" class="btn btn-primary">Home</a></li>
-            <li><a runat="server" href="~/" class="btn btn-primary">About</a></li>
+            <li><a runat="server" href="~/Default" class="btn btn-primary">About</a></li>
             <li><a runat="server" href="~/About" class="btn btn-primary">About</a></li>
             <li><a runat="server" href="~/Contact" class="btn btn-primary">Contact</a></li>
-            <li><a runat="server" href="#" class="btn btn-primary">About Us</a></li>
+            <li><a runat="server" href="#" class="btn btn-primary">Web Form</a></li>
+        
         </ul>
         
             <asp:LoginView runat="server" ViewStateMode="Disabled">
             <AnonymousTemplate>
         <ul class="nav navbar-nav nav-bar-pills navbar-right">
-            <li><a runat="server" href="~/Account/Register" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span> Register</a></li>
-            <li><a runat="server" href="~/Account/Login" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
+            <li><a runat="server" href="~/Account/Register" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span>Register</a></li>
+            <li><a runat="server" href="~/Account/Login" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span>Log in</a></li>
+            <li><a runat="server" href="~/Account/Forgot" class="btn btn-primary"><span class="glphicon glyphicon-question-sign">Forgot Passord</span> </a></li>
+
             </AnonymousTemplate>
             <LoggedInTemplate>
         </ul>
@@ -135,7 +138,7 @@
 </asp:ContentPlaceHolder>
 <%--Left Column--%>
      <div class="columnleft">
-        <asp:ContentPlaceHolder ID="LeftContentPlaceHolder" runat="server">
+        <asp:ContentPlaceHolder ID="cphLeft" runat="server">
             <div id="leftContainer">
                 <asp:ScriptManager ID="ScriptManager1" runat="server">
                 </asp:ScriptManager>
@@ -146,7 +149,7 @@
                 <asp:Label ID="lblCheckInDate" runat="server" Text="Check in date" ForeColor="DarkOrange"></asp:Label>
                 <br />
                 <asp:TextBox ID="txtCheckInDate" runat="server" CssClass="TextBox" Enabled="False"></asp:TextBox>
-                <asp:Button ID="btnCheckInDate" runat="server" OnClick="btnCheckIn_Click" CssClass="btn btn-primary" Height="20px" Width="25px" />
+                <asp:Button ID="btnCheckInDate" runat="server" image="~/images/Calendar_scheduleHS" OnClick="btnCheckIn_Click" CssClass="btn btn-primary" Height="20px" Width="25px" />
                 <asp:Panel ID="pnlCheckIn" runat="server" Width="184px" Visible="false" Height="178px">
                     <asp:Calendar ID="calCheckIn" runat="server" OnDayRender="calCheckIn_DayRender" OnPreRender="calCheckIn_PreRender" OnSelectionChanged="calCheckIn_SelectionChanged" CssClass="datepicker" NextPrevStyle-CssClass="alert-success" Height="150px" Width="150px"></asp:Calendar>
                     <br />
@@ -164,9 +167,10 @@
                     <br />
                 </asp:Panel>
             </asp:Panel>
-                        <asp:Label ID="lblDateDiff" runat="server" Text=""></asp:Label>
+                        <asp:Label ID="lblDateDiff" runat="server" Text="lblText"></asp:Label>
 
-
+        <asp:CompareValidator ID="CompareValidator1" runat="server" Operator="GreaterThanEqual"
+            ControlToValidate="txtCheckOutDate" ControlToCompare="txtCheckInDate" ErrorMessage='End Date must be greater than Start Date' Font-Bold="true" ForeColor="Red"></asp:CompareValidator>
 
 
                  
@@ -187,7 +191,7 @@
 
     <div class="column">
         <div class="mainContainer">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            <asp:ContentPlaceHolder ID="cphMain" runat="server">
             </asp:ContentPlaceHolder>
         </div>
     </div>
