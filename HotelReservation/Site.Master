@@ -170,7 +170,7 @@
                         <asp:Label ID="lblDateDiff" runat="server" Text="lblText"></asp:Label>
 
         <asp:CompareValidator ID="CompareValidator1" runat="server" Operator="GreaterThanEqual"
-            ControlToValidate="txtCheckOutDate" ControlToCompare="txtCheckInDate" ErrorMessage='End Date must be greater than Start Date' Font-Bold="true" ForeColor="Red"></asp:CompareValidator>
+            ControlToValidate="txtCheckOutDate" ControlToCompare="txtCheckInDate" ErrorMessage='End Date must be greater than Start Date' Font-Bold="False" ForeColor="Red" CultureInvariantValues="False" Type="Date"></asp:CompareValidator>
 
 
                  

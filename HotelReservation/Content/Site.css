@@ -103,7 +103,7 @@ input[type="select"] {
     float: left;
     width: 77.6%;
     border: solid 1px black;
-    margin: 2px 2px 5px 22px;
+    margin: 2px 2px 5px 20px;
     padding: 1px;
     background-color: white;
     min-height: 700px;
@@ -115,6 +115,9 @@ input[type="select"] {
     .container{
         width: 100% !important;
         position: relative;
+
+        display: block !important;
+
         float:none;
         padding:0px 0px 0px 10px;
         margin:1px 1px 2px 20px;
@@ -135,7 +138,6 @@ input[type="select"] {
         float: none;
 	}
 	.column  {
-		width: 480px;
         height:30%;
         position: relative;
 		float: none;
@@ -157,8 +159,8 @@ input[type="select"] {
         width:50%;
         height:50%;
         /*padding-left:1000px;*/
-        margin-left:500px;
-        margin-right:500px;
+        /*margin-left:1000px;*/
+        margin-right:50px;
     }
 
 }
@@ -179,4 +181,5 @@ input[type="select"] {
 {
     background-color: #ff0000;
     width: auto;
+    padding-left:25px;
 }

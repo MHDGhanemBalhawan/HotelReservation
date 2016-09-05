@@ -86,10 +86,10 @@ namespace HotelReservation
                     lblDateDiff.Text = "";
                     lblDateDiff.Text = (e1.Subtract(s).TotalDays).ToString() + " day";
                 }
-                else if ((e1.Subtract(s).TotalDays)==0)
-                {
-                    lblDateDiff.Text = "1 day";
-                }
+                //else if ((e1.Subtract(s).TotalDays)==0)
+                //{
+                //    lblDateDiff.Text = "1 day";
+                //}
                 else if ((e1.Subtract(s).TotalDays) > 1)
                 {
                     lblDateDiff.Text = "";
@@ -161,8 +161,18 @@ namespace HotelReservation
 
         protected void calCheckOut_DayRender(object sender, DayRenderEventArgs e)
         {
-            if (e.Day.Date < System.DateTime.Today)
+            //if (e.Day.Date < System.DateTime.Today)
+            //{
+            //    // Disable previous date
+            //    e.Day.IsSelectable = false;
+            //    // Change color of disabled date
+            //    e.Cell.ForeColor = Color.DarkGray;
+
+            //}
+            if (e.Day.Date <= (Convert.ToDateTime(txtCheckInDate.Text)))
             {
+              //TimeSpan s = new TimeSpan(Convert.ToDateTime(txtCheckInDate.Text).Ticks);
+              
                 // Disable previous date
                 e.Day.IsSelectable = false;
                 // Change color of disabled date
